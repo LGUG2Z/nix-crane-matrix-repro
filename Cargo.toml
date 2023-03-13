@@ -1,0 +1,10 @@
+[workspace]
+members = ["example"]
+
+[workspace.dependencies]
+matrix-sdk = { git = "https://github.com/matrix-org/matrix-rust-sdk", rev = "8d83a996a69ffcfca786dbc343dc9b862a9965df", default-features = false, features = [
+  "e2e-encryption",
+  "sled",
+  "rustls-tls",
+  "markdown",
+] }
